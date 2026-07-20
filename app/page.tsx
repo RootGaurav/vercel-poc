@@ -7,21 +7,31 @@ export default async function Home() {
     .select("*");
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="rounded-lg bg-white p-10 shadow-lg">
-        <h1 className="text-4xl font-bold text-blue-600">
-          Vercel CI/CD Demo 🚀
+    <main className="min-h-screen flex items-center justify-center bg-slate-100">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-[700px]">
+
+        <h1 className="text-3xl font-bold mb-6">
+          {process.env.NEXT_PUBLIC_APP_NAME}
         </h1>
 
-        <p className="mt-4">
+        <p className="mb-6">
           Environment :
-          {process.env.NEXT_PUBLIC_ENVIRONMENT}
+          {" "}
+          <strong>
+            {process.env.NEXT_PUBLIC_ENVIRONMENT}
+          </strong>
+        </p>
 
-          
-        </p>
-        <p className="mt-2">
-         Feature branch changes.
-        </p>
+        <h2 className="text-xl font-semibold mb-3">
+          Users
+        </h2>
+
+        {error ? (
+          <p className="text-red-500">{error.message}</p>
+        ) : (
+          <pre>{JSON.stringify(data, null, 2)}</pre>
+        )}
+
       </div>
     </main>
   );
