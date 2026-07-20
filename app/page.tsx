@@ -7,7 +7,7 @@ export default async function Home() {
     .select("*");
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-slate-100">
+    <main className="min-h-screen font-sans text-black flex items-center justify-center bg-slate-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-[700px]">
 
         <h1 className="text-3xl font-bold mb-6">
