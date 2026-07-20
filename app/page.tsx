@@ -12,9 +12,10 @@ export default function Home() {
           {" "}
           {process.env.NEXT_PUBLIC_ENVIRONMENT}
 
-
-
-          Changes are implemented in dev branch 
+          
+        </p>
+        <p className="mt-2">
+         Feature branch changes.
         </p>
 
       </div>
