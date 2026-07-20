@@ -9,6 +9,11 @@ export default function Home() {
         <p className="mt-4">
           Environment :
           {process.env.NEXT_PUBLIC_ENVIRONMENT}
+
+          
+        </p>
+        <p className="mt-2">
+         Feature branch changes.
         </p>
       </div>
     </main>
